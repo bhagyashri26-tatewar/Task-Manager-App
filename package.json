@@ -1,0 +1,18 @@
+{
+  "name": "mern-taskmanager",
+  "version": "1.0.0",
+  "description": "Full Stack Task Manager App with MongoDB, Express.js, React, and Node.js",
+  "scripts": {
+    "server": "cd server && npm run start",
+    "server:dev": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build:client": "cd client && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
